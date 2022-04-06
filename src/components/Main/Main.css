@@ -60,7 +60,7 @@
 #mainImage::before{
     position: absolute;
     content: "";
-    background: url("/images/topSh.png");
+    background: url("/images/topVector.webp");
     background-size: cover;
     background-repeat: no-repeat;
     top: -50px;
@@ -72,7 +72,7 @@
 #mainImage::after{
     position: absolute;
     content: "";
-    background: url("/images/bottomSh.png");
+    background: url("/images/bottomSh.webp");
     background-size: cover;
     background-repeat: no-repeat;
     bottom: 20px;

@@ -6,7 +6,7 @@ const Main = () => {
         <div id="mainContainer">
             <div id="main">
                 <div id="mainImage" data-aos="flip-right">
-                    <img src="/images/va.gif" alt="main" className="mainImage"/>
+                    <img src="/images/wallpaper.webp" alt="main" className="mainImage"/>
                 </div>
                 <div id="mainText">
                     <div id="mainTextContainer" data-aos="zoom-in-right">

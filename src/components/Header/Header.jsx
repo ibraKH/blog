@@ -65,7 +65,7 @@ const Header = ({color = "yellow"}) => {
             </div>
             <div id="rightHeaderContainer">
                 <div id="iconContainer">
-                    <img src="/images/smile.png" alt="logo" className="logo headerIcons" />
+                    <img src="/images/smile.webp" alt="logo" className="logo headerIcons" />
                 </div>
             </div>
         </div>

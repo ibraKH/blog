@@ -50,7 +50,7 @@ a{
     width: 160px;
     height: 150px;
     z-index: -1;
-    background-image: url("/images/pattern/first.png");
+    background-image: url("/images/pattern/first.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -62,7 +62,7 @@ a{
     width: 250px;
     height: 150px;
     z-index: -1;
-    background-image: url("/images/pattern/secend.png");
+    background-image: url("/images/pattern/secend.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -74,7 +74,7 @@ a{
     width: 200px;
     height: 200px;
     z-index: -1;
-    background-image: url("/images/pattern/third.png");
+    background-image: url("/images/pattern/third.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -86,7 +86,7 @@ a{
     width: 200px;
     height: 150px;
     z-index: -1;
-    background-image: url("/images/pattern/fourth.png");
+    background-image: url("/images/pattern/fourth.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }

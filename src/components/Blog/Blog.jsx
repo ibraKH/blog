@@ -26,8 +26,10 @@ const Blog = ({blogs}) => {
                         </div>
                         <div className="blogTextContainer">
                             <div className="blogText">
-                                <h3 className="blogTextHeader">{x.title}</h3>
-                                <h4 className="blogTextFont">{x.description}</h4>
+                                <section>
+                                    <h2 className="blogTextHeader">{x.title}</h2>
+                                </section>
+                                <h3 className="blogTextFont">{x.description}</h3>
                             </div>
                             <div className="blogButtonContainer">
                                 <button className="blogButton"><a href={"/"}>More</a></button>
