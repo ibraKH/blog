@@ -1,0 +1,97 @@
+#mainContainer{
+    position: relative;
+    width: 100%;
+    height: 1129px;
+    top: 0;
+    background: linear-gradient(180deg, #FAFF00 34.85%, rgba(255, 255, 255, 0) 100%);
+    overflow: hidden;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 320px) {
+    #mainImage{
+        display: none;    
+    }
+    #mainText{
+        position: absolute;
+        bottom: 350px;
+        left: 10%;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    #mainImage{
+        position: relative;
+        width: 60%;
+        top: 15%;
+        left: 20%;
+        height: 35%;    
+    }
+    #mainText{
+        position: absolute;
+        bottom: 350px;
+        left: 16%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    #mainImage{
+        position: absolute;
+        width: 420px;
+        top: 10%;
+        left: 25%;
+        height: 600px;    
+    }
+    #mainText{
+        position: absolute;
+        bottom: 350px;
+        top: 25%;
+        margin-left: 120px;
+        width: 80%;
+    }
+    #mainTextContainer{
+        position: absolute;
+        right: 0;
+    }
+    
+}
+#mainImage::before{
+    position: absolute;
+    content: "";
+    background: url("/images/topSh.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -50px;
+    left: -60px;
+    width: 150px;
+    height: 160px;
+    z-index: 1;
+}
+#mainImage::after{
+    position: absolute;
+    content: "";
+    background: url("/images/bottomSh.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 20px;
+    right: -55px;
+    width: 150px;
+    height: 65px;
+    z-index: 1;
+}
+.mainImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.mainText{
+    font-family: 'Merienda', cursive;
+}
+#read{
+    margin-left: 20px;
+}
+#learn{
+    margin-left: 40px;
+}

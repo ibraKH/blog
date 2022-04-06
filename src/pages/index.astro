@@ -1,0 +1,49 @@
+---
+
+
+import Header from "../components/Header/Header.jsx";
+import Main from "../components/Main/Main.jsx";
+import Blog from "../components/Blog/Blog.jsx";
+import Navbar from "../components/Navbar/Navbar.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+
+
+
+
+import "../styles/index.css";
+
+
+const blogs = await fetch("http://localhost:4000").then(response => response.json());
+
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&family=Satisfy&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<meta name="description" content="ibra blogs, and portfolio , Learn and Read the newest news about web development." />
+	<title>Blog</title>
+</head>
+<body>
+	<div id="pageContainer">
+		<div id="parent" class="parent mainContainer">
+			<Header client:load />
+			<Main />
+			<Blog blogs={blogs} />
+			<Navbar />
+			<Footer />
+		</div>
+	</div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	
+		AOS.init();
+	</script>
+</body>
+</html>
