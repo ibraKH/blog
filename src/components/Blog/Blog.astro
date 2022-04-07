@@ -1,0 +1,38 @@
+---
+import "./Blog.css";
+
+const { blogs } = Astro.props;
+
+const patterns = [
+        "firstPattern","secendPattern","thirdPattern","fourthPatter"
+];
+
+---
+<div id="blog">
+                <div id="blogText" data-aos="fade-up">
+                        <h1 class="blogHeaderText">BLOG</h1>
+                </div>
+            <div id="blogContainer">
+                {typeof blogs !== "undefined" ? blogs.map((x,i) => {
+                    let patternStyle = patterns[Math.floor(Math.random() * patterns.length)];
+                    return ( 
+                    <div id={x.title} class={"blogs " + patternStyle} data-aos={i % 2 === 0 ? "fade-up-right" : "fade-up-left"}>
+                        <div class="blogImage">
+                            <img src={x.image} alt={"blogImage"} class="blogImages"/>
+                        </div>
+                        <div class="blogTextContainer">
+                            <div class="blogText">
+                                <section>
+                                    <h2 class="blogTextHeader">{x.title}</h2>
+                                </section>
+                                <h3 class="blogTextFont">{x.description}</h3>
+                            </div>
+                            <div class="blogButtonContainer">
+                                <button class="blogButton"><a href={"/"}>More</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    )
+                }) : <h1 class="blogHeaderText">Writing new Blog, be ready...</h1>}
+            </div>
+</div>
