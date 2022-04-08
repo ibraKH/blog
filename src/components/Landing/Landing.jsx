@@ -10,7 +10,7 @@ class Landing extends React.Component{
         return(
             <div id='tyText'>
                 <Typewriter options={{
-                    strings: ["Welcome", "Hello", "Web Developer"],
+                    strings: ["FullStack Dev", "Designer", "CE Student"],
                     autoStart: true,
                     loop: true,
                 }}/>
