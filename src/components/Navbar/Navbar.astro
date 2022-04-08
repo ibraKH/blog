@@ -1,8 +1,12 @@
 ---
 import "./Navbar.css"
+
+const { color = "yellow" } = Astro.props;
+
+
 ---
-<div id="navbarBigScreen">
-    <div id="navbarIconsContainer">
+<div id="navbarBigScreen" class={color === "yellow" ? "yellowBackground" : "whiteBackground"}>
+    <div id="navbarIconsContainer"> 
         <div id="socialIconsContainer">
             <div id="telegram" class="socialIcons">
                 <a href="https://t.me/CEibra" target={"_blank"}><img src="/images/icons/telegram.webp"/></a>

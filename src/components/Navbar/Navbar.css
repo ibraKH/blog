@@ -13,7 +13,6 @@
         border-radius: 10px;
         transform: translate(-10px,-50%);
         z-index: 3;
-        background-color: #FAFF00;
     }
     #navbarIconsContainer{
         position: relative;
@@ -29,4 +28,10 @@
     .socialIcons{
         margin: 20px;
     }
+}
+.yellowBackground{
+    background-color: #FAFF00;
+}
+.whiteBackground{
+    background-color: white;
 }

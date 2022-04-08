@@ -13,7 +13,7 @@ const patterns = [
                         <h1 class="blogHeaderText">BLOG</h1>
                 </div>
             <div id="blogContainer">
-                {typeof blogs !== "undefined" ? blogs.map((x,i) => {
+                {blogs.map((x,i) => {
                     let patternStyle = patterns[Math.floor(Math.random() * patterns.length)];
                     return ( 
                     <div id={x.title} class={"blogs " + patternStyle} data-aos={i % 2 === 0 ? "fade-up-right" : "fade-up-left"}>
@@ -28,11 +28,11 @@ const patterns = [
                                 <h3 class="blogTextFont">{x.description}</h3>
                             </div>
                             <div class="blogButtonContainer">
-                                <button class="blogButton"><a href={"/"}>More</a></button>
+                                <button class="blogButton"><a href={`${x.url}`}>More</a></button>
                             </div>
                         </div>
                     </div>
                     )
-                }) : <h1 class="blogHeaderText">Writing new Blog, be ready...</h1>}
+                })}
             </div>
 </div>

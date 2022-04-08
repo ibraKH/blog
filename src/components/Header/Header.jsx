@@ -20,6 +20,7 @@ const Header = ({color = "yellow"}) => {
         return setNavbarExpand(true);
     }
 
+
     return (
         <div id="header" className={theme ? navbarExpand ? "navHeaderActive yellowTheme" : count === 0 ? "headerNavbarContainer yellowTheme" : "navHeaderNotActive yellowTheme" : navbarExpand ? "navHeaderActive whiteTheme" : count === 0 ? "headerNavbarContainer whiteTheme" : "navHeaderNotActive whiteTheme"}>
             <div id="headerNavbarContent" className={navbar ? "show" : "hide"}>
@@ -31,12 +32,12 @@ const Header = ({color = "yellow"}) => {
                         <h4><a href="/contact" className="headerLinks">CONTACT</a></h4>
                     </div>
                     <div id="BlogsNavHeader">
-                        <h4><a href="/" className="headerLinks">BLOGS</a></h4>
+                        <h4><a href="/Blogs" className="headerLinks">BLOGS</a></h4>
                     </div>
                 </div>
             </div>
-            <div id="navbar">
-                <div id="barsContainer" onClick={expand}>
+            <div id="navbar" onClick={expand}>
+                <div id="barsContainer">
                     <div id="topBar" className={navbar ? "leftCrosed" : "normal"}>
 
                     </div>
@@ -46,8 +47,10 @@ const Header = ({color = "yellow"}) => {
                 </div>
             </div>
             <div id="leftHeaderContainer">
-                <div id="logoContainer" data-aos="flip-left">
-                    <h1 className="ibra">IBRA BLOG</h1>
+                <div id="leftCH">
+                    <div id="logoContainer" data-aos="flip-left">
+                        <h1 className="ibra"><a href="/" className="toMainLink">IBRA BLOG</a></h1>
+                    </div>
                 </div>
             </div>
             <div id="centerHeaderContainer">
@@ -59,7 +62,7 @@ const Header = ({color = "yellow"}) => {
                         <h4><a href="/contact" className="headerLinks">CONTACT</a></h4>
                     </div>
                     <div id="blogsHeader" className="headerText">
-                        <h4><a href="/" className="headerLinks">BLOGS</a></h4>
+                        <h4><a href="/Blogs" className="headerLinks">BLOGS</a></h4>
                     </div>
                 </div>
             </div>
