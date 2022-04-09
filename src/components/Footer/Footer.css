@@ -22,7 +22,7 @@
 }
 .footerText{
     margin: 10px 0 0px 0;
-    font-family: 'Satisfy', cursive;
+    font-family: Satisfy,cursive;
     cursor: pointer;
 }
 #footerCR{
@@ -35,6 +35,7 @@
     font-size: xx-small;
 }
 .footerLinks{
+    font-family: Satisfy,cursive;
     text-decoration: none;
     color: black;
 }

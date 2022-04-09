@@ -24,23 +24,24 @@ const {page} = Astro.props;
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#181818">
 	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Merienda&family=Satisfy&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=El+Messiri&family=Merienda&family=Montserrat+Alternates:ital,wght@1,200&family=Satisfy&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 	<meta name="description" content="ibra blogs, and portfolio , Learn and Read the newest news about web development." />
 	<title>Blog</title>
 </head>
-<body>
+<body style="background-color: #181818;">
     <div class="pageContainer">
 		<div class="parent mainContainer">
-			<Header client:load />
+			<Header client:load color="white" />
 			<Main />
 			<Blog blogs={page.data} />
-			<Navbar />
+			<Navbar color="white" />
 			<Footer />
 		</div>
 	</div>

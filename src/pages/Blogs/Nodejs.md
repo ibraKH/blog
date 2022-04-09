@@ -3,13 +3,18 @@ setup: |
     import Layout from '../../layouts/BlogLayout.astro';
 name: Nodejs
 title: Nodejs Blog
-image: https://www.kojac.nl/tailwind/images/Backend/nodejs.png
-avatar: http://localhost:4000/avatar.png
+lang: en
+image: https://blog-ibackend.herokuapp.com/images/nodejs.png
+avatar: https://blog-ibackend.herokuapp.com/avatar/avatarB.png
 description: In this blog, will discuss and learn about Nodejs and its use , the libraries and frameworks
 ---
 
 
 ### Node.js is :
+
+###### Note : This blog for testing "copied" , The real blog is coming soon...
+
+<br>
 
 #### an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. 
 
