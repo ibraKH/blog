@@ -147,7 +147,7 @@ a{
     font-family: 'Comfortaa', cursive;
     font-size: x-large;
     margin-left: 100px;
-    color: #FF3D00;
+    color: #AC00FD;
 }
 @media screen and (max-width: 380px) {
     .firstBlob::after{

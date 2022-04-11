@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./Header.css"
+import "./Header.css";
 
-const Header = ({color = "yellow"}) => {
 
-    const [theme , setTheme] = useState(color === "yellow" ? true : false);
+const Header = ({color = "transparent"}) => {
+
+    const [theme , setTheme] = useState(color === "transparent" ? true : false);
     const [navbar, setNavbar] = useState(false);
     const [navbarExpand , setNavbarExpand] = useState(false);
     const [count , setCount ] = useState(0);
@@ -22,7 +23,7 @@ const Header = ({color = "yellow"}) => {
 
 
     return (
-        <div id="header" className={theme ? navbarExpand ? "navHeaderActive yellowTheme" : count === 0 ? "headerNavbarContainer yellowTheme" : "navHeaderNotActive yellowTheme" : navbarExpand ? "navHeaderActive whiteTheme" : count === 0 ? "headerNavbarContainer whiteTheme" : "navHeaderNotActive whiteTheme"}>
+        <div id="header" className={theme ? navbarExpand ? "navHeaderActive transparentTheme" : count === 0 ? "headerNavbarContainer transparentTheme" : "navHeaderNotActive transparentTheme" : navbarExpand ? "navHeaderActive whiteTheme" : count === 0 ? "headerNavbarContainer whiteTheme" : "navHeaderNotActive whiteTheme"}>
             <div id="headerNavbarContent" className={navbar ? "show" : "hide"}>
                 <div>
                     <div id="AboutMeNavHeader">
@@ -64,11 +65,6 @@ const Header = ({color = "yellow"}) => {
                     <div id="blogsHeader" className="headerText">
                         <h4><a href="/Blogs" className="headerLinks">BLOGS</a></h4>
                     </div>
-                </div>
-            </div>
-            <div id="rightHeaderContainer">
-                <div id="iconContainer">
-                    <img src="/images/smile.webp" alt="logo" className="logo headerIcons" />
                 </div>
             </div>
         </div>

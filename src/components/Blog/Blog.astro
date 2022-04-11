@@ -19,9 +19,9 @@ const patterns = [
                     let randomInt = Math.floor(Math.random() * patterns.length)
                     let patternStyle = patterns[randomInt];
                     return ( 
-                    <div id={x.title} class={x.lang === "en" ? "EN blogs " + patternStyle : "AR blogs " + patternStyle} data-aos={i % 2 === 0 ? "fade-up-right" : "fade-up-left"}>
+                    <div id={x.title} class={x.lang === "en" ? "EN blogs " + patternStyle : "AR blogs " + patternStyle} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500">
                         <div class="blogImage">
-                            <div class="blogImageContainer">
+                            <div class="blogImageContainer" data-aos="fade-left" data-aos-duration="1000">
                                 {randomInt === 0 ?
                                     <img src={x.image} alt="blogImage" class="blogImagesDesign"/>
                                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="blogBlob">
@@ -44,7 +44,7 @@ const patterns = [
                             </div>
                         </div>
                         <div class="blogTextContainer">
-                            <div class="blogText">
+                            <div class="blogText" data-aos="fade-right" data-aos-duration="1000">
                                 <section>
                                     <h2 class="blogTextHeader">{x.title}</h2>
                                 </section>
