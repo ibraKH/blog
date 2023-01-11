@@ -5,4 +5,5 @@ export default defineConfig({
     integrations: [
         react(),
     ],
+    server: (command) => ({port: command === 'preview' ? 3000 : 4000}),
 });

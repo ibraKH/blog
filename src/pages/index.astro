@@ -1,47 +1,55 @@
 ---
 
 
-import Header from "../components/Header/Header.jsx";
-import Landing from "../components/Landing/Landing.astro";
-import Navbar from "../components/Navbar/Navbar.astro";
+
 
 
 
 
 import "../styles/index.css";
-
+import "../styles/fonts.css";
 
 
 
 ---
 <html lang="en">
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-G56N6HQGH1"></script>
+	<script src="/analytics.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#181818">
-	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
-	<link rel="icon" type="image/png" href="/images/favicon/favicon.png" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.ibra.ws/images/favicon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.ibra.ws/images/favicon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.ibra.ws/images/favicon/favicon-16x16.png" />
+	<link rel="icon" type="image/png" href="https://www.ibra.ws/images/favicon/favicon-32x32.png" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Merienda&family=Montserrat+Alternates:ital,wght@1,300&family=Satisfy&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<meta name="description" content="ibra blogs, and portfolio , Learn and Read the newest news about web development." />
-	<title>ibra website</title>
+	<meta name="keywords" content="ibra, blogs, portfolio" />
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.ibra.ws/">
+	<meta property="og:title" content="ibra web">
+	<meta property="og:description" content="blogs, and portfolio , Learn and Read the newest news about web development.">
+	<meta property="og:image" itemprop="image" content="https://www.ibra.ws/images/favicon/android-chrome-192x192.png">
+	<title>ibra Website || Explore More </title>
 </head>
 <body>
-	<div class="pageContainer">
-		<div class="parent LandingContainer">
-			<Header client:load />
-			<Landing />
-			<Navbar color="white" />
-		</div>
+	<div class="parent">
+			<div id="logo">
+				<div id="logoContainer">
+					<h1 class="ibra" data-aos="fade-down"><a href="/Map" class="toMainLink">IBRA BLOG</a></h1>
+				</div>
+			</div>
+			<div class="name">
+				<h1>sOOn...</h1>
+			</div>
+			<div class="nav">
+				<a href="https://twitter.com/IGsibra" target="_blank"><img src="/images/icons/twitter.svg" alt="twitter logo" /></a>
+				<a href="https://github.com/ibraKH" target="_blank"><img src="/images/icons/github.svg" alt="github logo" /></a>
+			</div>
+			<div id="stars"></div>
+			<div id="stars2"></div>
 	</div>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-
-		AOS.init();
-	</script>
 </body>
 </html>
