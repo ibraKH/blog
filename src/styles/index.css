@@ -6,7 +6,7 @@ body{
 .name{
     font-size: 40px;
     font-family: BroLink;
-    background: linear-gradient(127.59deg, #f1f1f1 9.79%, #c19ff8 100.64%);
+    background: linear-gradient(127.59deg, #7e3ee7 9.79%, #cbacfe 165.64%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -19,8 +19,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: -webkit-fill-available;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -45,16 +45,17 @@ body{
 }
 .nav{
     position: absolute;
-    bottom: 0;
-    width: 90%;
-    border-radius: 20px 20px 0 0;
-    height: 30px;
-    background-color: white;
+    top: 20px;
+    right: 30px;
+    width: 80px;
+    height: 35px;
 }
 .navImages{
     padding: 0px;
     margin: auto 2px;
-    height: 30px;
+}
+.navImages img{
+  height: 30px;
     width: 30px;
 }
 .hide{

@@ -8,7 +8,7 @@
 
 import "../styles/index.css";
 import "../styles/fonts.css";
-
+import Typer from "../components/typer/Typer";
 
 
 ---
@@ -32,7 +32,7 @@ import "../styles/fonts.css";
 	<meta property="og:title" content="ibra web">
 	<meta property="og:description" content="blogs, and portfolio , Learn and Read the newest news about web development.">
 	<meta property="og:image" itemprop="image" content="https://www.ibra.ws/images/favicon/android-chrome-192x192.png">
-	<title>ibra Website || Explore More </title>
+	<title>ibra portfolio</title>
 </head>
 <body>
 	<div class="parent">
@@ -41,15 +41,16 @@ import "../styles/fonts.css";
 					<h1 class="ibra" data-aos="fade-down"><a href="/Map" class="toMainLink">IBRA BLOG</a></h1>
 				</div>
 			</div>
-			<div class="name">
-				<h2>sOOn...</h2>
+			<div class="itemsContainer">
+				<div class="name">
+					<Typer client:load />
+				</div>
 			</div>
 			<div class="nav">
 				<a rel='canonical' href="https://twitter.com/IGsibra" target="_blank" class="navImages"><img src="/images/icons/twitter.svg" alt="twitter logo" /></a>
 				<a rel='canonical' href="https://github.com/ibraKH" target="_blank" class="navImages"><img src="/images/icons/github.svg" alt="github logo" /></a>
 			</div>
 			<div id="stars"></div>
-			<div id="stars2"></div>
 	</div>
 </body>
 </html>
